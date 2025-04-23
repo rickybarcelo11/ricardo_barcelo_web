@@ -1,0 +1,140 @@
+/* ============================
+   PALETA DE COLORES Y FUENTE
+============================ */
+:root {
+    --color-fondo: #f5f5f5;
+    --color-texto: #222;
+    --color-primario: #4070F4;
+    --color-secundario: #0E2431;
+    --fuente-base: 'Arial', sans-serif;
+  }
+  
+  /* ============================
+     CONFIGURACIÓN GENERAL
+  ============================ */
+  body {
+    background-color: var(--color-fondo);
+    color: var(--color-texto);
+    font-family: var(--fuente-base);
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* ============================
+     ENCABEZADO
+  ============================ */
+  header {
+    background-color: var(--color-primario);
+    color: white;
+    text-align: center;
+    padding: 1.5rem 0;
+  }
+  
+  header h1 {
+    margin: 0;
+    font-size: 2rem;
+  }
+  
+  /* ============================
+     NAVEGACIÓN
+  ============================ */
+  nav ul {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    list-style: none;
+    padding: 0;
+    margin-top: 1rem;
+  }
+  
+  nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 0.3rem 0.7rem;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+  }
+  
+  nav a:hover {
+    background-color: white;
+    color: var(--color-primario);
+  }
+  
+  /* ============================
+     SECCIONES
+  ============================ */
+  section {
+    padding: 2rem;
+    max-width: 900px;
+    margin: auto;
+  }
+  
+  section h2 {
+    color: var(--color-primario);
+    font-size: 1.6rem;
+    margin-bottom: 1rem;
+  }
+  
+  section p {
+    margin-bottom: 1rem;
+  }
+  
+  /* ============================
+     IMÁGENES
+  ============================ */
+  img {
+    display: block;
+    margin: 1rem auto;
+    max-width: 100%;
+    width: 200px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+  }
+  
+  /* ============================
+     LISTAS
+  ============================ */
+  ul li {
+    margin-bottom: 0.5rem;
+  }
+  
+  /* ============================
+     PIE DE PÁGINA
+  ============================ */
+  footer {
+    background-color: var(--color-secundario);
+    color: white;
+    text-align: center;
+    padding: 1rem;
+  }
+  
+  footer p {
+    font-size: 0.9rem;
+    opacity: 0.8;
+  }
+  
+  /* ============================
+     RESPONSIVE (TABLET Y MÓVIL)
+  ============================ */
+  @media (max-width: 768px) {
+    nav ul {
+      flex-direction: column;
+      align-items: center;
+      gap: 0.5rem;
+    }
+  
+    header h1 {
+      font-size: 1.5rem;
+    }
+  
+    section {
+      padding: 1rem;
+    }
+  
+    img {
+      width: 150px;
+    }
+  }
+  
